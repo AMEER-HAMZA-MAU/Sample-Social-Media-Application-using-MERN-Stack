@@ -7,7 +7,6 @@
 ########################################################
 
 sudo apt-get update && apt-get upgrade
-sudo apt install docker.io 
 sudo systemctl enable docker
 sudo systemctl start docker
 echo "build the docker image"
