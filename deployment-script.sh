@@ -8,6 +8,8 @@
 
 sudo apt-get update && apt-get upgrade -y
 sudo apt install docker.io -y
+sudo systemctl enable docker
+sudo systemctl start docker
 echo "build the docker image"
 sudo docker build -t mernstack:latest
 echo "Deploying the updated container"
